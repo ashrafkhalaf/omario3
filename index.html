@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Password</title>
+<style>
+body{background:#7b001c;color:white;font-family:Arial;text-align:center;padding-top:150px}
+input,button{padding:12px;border-radius:10px;border:none;font-size:18px}
+button{background:#ff2d55;color:white;margin-top:15px}
+</style>
+</head>
+<body>
+<h2>Enter Password</h2>
+<input type="password" id="pass" placeholder="Password"><br>
+<button onclick="check()">Enter</button>
+<script>
+function check(){
+ if(document.getElementById("pass").value==="All my life"){
+  window.location="page1.html";
+ } else { alert("Wrong password"); }
+}
+</script>
+</body>
+</html>
